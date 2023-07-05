@@ -3,8 +3,8 @@ var express = require("express");
 var app = express();
 var server = require("http").createServer(app);
 
-app.get("/group/",(req,res)=>{
-    res.send(req.params.name);
+app.get("/group",(req,res)=>{
+    res.send("group");
     console.log("group:");
     console.log(req.params.name);
 })
