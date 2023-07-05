@@ -4,9 +4,11 @@ var app = express();
 var server = require("http").createServer(app);
 
 app.get("/group/:name",(req,res)=>{
-    //console.log("group get")
-    //console.log(req.params.name);
     res.send(req.params.name);
 })
+app.get("/",(req,res)=>{
+    res.send("main page");
+})
+
 
 server.listen(PORT,"")
