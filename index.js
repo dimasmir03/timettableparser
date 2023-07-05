@@ -9,7 +9,7 @@ app.get("/group",(req,res)=>{
     console.log(req.params.name);
 })
 app.get("/",(req,res)=>{
-    res.send("main page");
+    res.send("main page1");
     console.log("main");
 })
 
