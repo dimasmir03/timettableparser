@@ -9,8 +9,9 @@ app.get("/group",(req,res)=>{
     console.log(req.params.name);
 })
 app.get("/",(req,res)=>{
-    res.send("main page1");
+    res.send(req.query.name);
     console.log("main:");
+    console.log(req.query.name)
 })
 
 
