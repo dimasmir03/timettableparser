@@ -6,7 +6,7 @@ var server = require("http").createServer(app);
 app.get("/group/:name",(req,res)=>{
     console.log("group get")
     console.log(req.params.name);
-    res.send("done");
+    res.send(req.params.name);
 })
 
 server.listen(PORT,"",()=> console.log("Сервер запущен"))
