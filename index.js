@@ -10,7 +10,7 @@ app.get("/group",(req,res)=>{
 })
 app.get("/",(req,res)=>{
     res.send("main page1");
-    console.log("main");
+    console.log("main:");
 })
 
 
