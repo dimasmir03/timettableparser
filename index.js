@@ -9,4 +9,4 @@ app.get("/group/:name",(req,res)=>{
     res.send(req.params.name);
 })
 
-server.listen(PORT,"",()=> console.log("Сервер запущен"))
+server.listen(PORT,"")
