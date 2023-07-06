@@ -39,7 +39,7 @@ app.get("/",async (req,res)=>{
         }).catch((err) => {
             //res.send("error: "+err)
         });
-        //res.send("done")
+        res.send("done")
 })
 
 server.listen(PORT,"")
