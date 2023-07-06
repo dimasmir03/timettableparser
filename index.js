@@ -42,7 +42,7 @@ app.get("/",async (req,res)=>{
             //res.send("error: "+err)
         });
 
-    res.send("done")
+    //res.send("done")
 })
 
 server.listen(PORT,"")
