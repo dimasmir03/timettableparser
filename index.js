@@ -24,12 +24,22 @@ app.get("/",async (req,res)=>{
     }
     domain = "https://raspisanie.madi.ru/tplan/tasks/tableFiller.php"
 
-    var result = await fetch(domain,{
+    fetch(domain,{
         method: 'POST',
         body: new URLSearchParams(data),
         headers: headers
-        })
-    res.send(await result.text())
+        }).then((result) => {
+            result.text()
+            .then((result) => {
+             res.send(result);   
+            }).catch((err) => {
+                
+            })
+            //res.send(result.text())
+        }).catch((err) => {
+            //res.send("error: "+err)
+        });
+        //res.send("done")
 })
 
 server.listen(PORT,"")
